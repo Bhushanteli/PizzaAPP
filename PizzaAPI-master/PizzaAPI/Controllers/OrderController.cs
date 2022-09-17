@@ -33,6 +33,7 @@ namespace PizzaAPI.Controllers
         [ProducesDefaultResponseType]
         public async Task<IActionResult> GetOrders( )
         {
+            //Get All Orders
             var oresult = await orderRepository.GetOrders();
             return Ok(oresult);
         }
